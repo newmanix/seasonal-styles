@@ -1,0 +1,113 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html {
+    background-color: lightgray;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+::selection {
+    color: #000; 
+    background: #ff0;
+}
+
+h1 {
+    font-weight: normal;
+    margin: auto;
+    background: #fff;
+    line-height: 2.5em;
+}
+
+main.wrapper {
+    background-color: white;
+    overflow: auto;
+}
+
+p {
+    margin: 1em; /* Top Right Bottom Left (TRBL) */
+}
+
+h2,h3 {
+    font-weight: normal;
+    margin-left: 1em;
+    line-height: 1em;
+}
+
+a {
+    color:darkcyan;
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke;
+    background-color: darkcyan;
+    text-decoration: none;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    main.wrapper {
+        width: 80%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 79%;
+        padding-left: 1%;
+    }
+    
+    picture.profile img {
+        width: 50%;
+        float: left;
+        margin-right: 2em;
+    }
+    
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    main.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 89%;
+        padding-left: 1%;
+    }
+    
+    picture.profile img {
+        width: 50%;
+        float: right;
+        margin-left: 1em;
+    }
+
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+    main.wrapper {
+        width: 100%;
+    }
+    
+    h1 {
+        width: 99%;
+        padding-left: 1%;
+    }
+    
+    picture.profile img {
+        width: 100%;
+    }
+    
+}
