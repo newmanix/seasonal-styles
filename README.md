@@ -1,5 +1,5 @@
-# portal
+# Seasonal Styles
 
-An example portal page
+A starting point for experimentation with jQuery.
 
-Please feel free to use the HMTL/CSS and JS in this repo as you wish!
+Part of the current IT121 class.
